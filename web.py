@@ -66,4 +66,5 @@ text = st.text_input(label='',
               placeholder='Enter to do....',
               key='new_todo')  # Use 'new_todo' as the session state key
 
+# Add button to add new to do
 st.button("Add", type="primary", on_click=add_todo)
