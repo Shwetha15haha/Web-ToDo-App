@@ -62,7 +62,8 @@ for index, todo in enumerate(todos):
         st.rerun()  # Rerun the app to reflect the changes instantly
 
 # Input field to add a new todo, triggered when the user presses enter
-st.text_input(label='',
+text = st.text_input(label='',
               placeholder='Enter to do....',
-              on_change=add_todo,  # Call add_todo when input changes
               key='new_todo')  # Use 'new_todo' as the session state key
+
+st.button("Add", type="primary", on_click=add_todo)
