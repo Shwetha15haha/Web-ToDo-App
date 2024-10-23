@@ -48,7 +48,7 @@ def add_todo():
     st.session_state['new_todo'] = ''  # Reset the input field by clearing the session state
 
 # Set the title and subheader of the Streamlit app
-st.title('Todo App')  # Display the main title of the app
+title = st.title('Todo App')  # Display the main title of the app
 st.subheader('For personal use')  # Subheading to indicate it's a personal app
 # st.write('Jot down everything you need to do now')  # A short description of what the app does
 
