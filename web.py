@@ -50,7 +50,11 @@ def add_todo():
 # Set the title and subheader of the Streamlit app
 st.title('Todo App')  # Display the main title of the app
 st.subheader('For personal use')  # Subheading to indicate it's a personal app
-st.write('Jot down everything you need to do now')  # A short description of what the app does
+# st.write('Jot down everything you need to do now')  # A short description of what the app does
+
+st.markdown('''
+    :red[Jot] :orange[down] :green[everything] :blue[you] :violet[need]
+    :rainbow[todo] :blue-background[now] .''')
 
 # Iterate over the list of todos and display each as a checkbox
 for index, todo in enumerate(todos):
